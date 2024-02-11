@@ -13,7 +13,7 @@ import numpy as np
 current_dir = os.getcwd()
 input_file_path = os.path.join(current_dir, 'input.txt')
 if not os.path.exists(input_file_path):
-    data_url = 'https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt'
+    data_url = 'https://raw.githubusercontent.com/js-ts/nanoGPT/master/input.txt'
     with open(input_file_path, 'w') as f:
         f.write(requests.get(data_url).text)
 
@@ -61,9 +61,9 @@ meta = {
 with open(os.path.join(os.path.dirname(__file__), 'meta.pkl'), 'wb') as f:
     pickle.dump(meta, f)
 
-# length of dataset in characters:  1115394
-# all the unique characters:
-#  !$&',-.3:;?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
-# vocab size: 65
-# train has 1003854 tokens
-# val has 111540 tokens
+# length of dataset in characters: 13,352,211
+# all the unique characters: 
+#  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz|}~¡¢£¥§©°±²³´µ·º½¾¿ÁÄÅÆÇÉÍÎÑÓÖ×ØÚÜÞßàáâãäåæçèéêëìíîïðñòóôöøùúûüýþĀāăąćČčĐđĒēĔĕėęěğħīİıĽŁłńŌōœřŚśŞşŠšţũūůųźŻżŽžơưǎǐǔǜȘșțȯɐɑɒɔəɛɜɡɢɪɫɳɽɾʁʃʊʋʒʔʕʲʻʼʾʿˈˌː̥̯͍́̃̍͘ΑΔΚΝΠΤΦΧΩάέήίαβγδεηθικλμνξοπρςστυχψωόύώАБВГКПРСУХЯавгдежзийклмнопрстухцшъыьюяєֵֶָֹּאבגהוזחילםמןנסףפצרשתءأإابةتثجحخدذرسشصعفقكلمنهويڠܐܕܗܝܠܢܬܲܵंअईकगणतदनपबमयरलवषसहािुूेैो्আলহা্ਅਲਹਾੁੱഅളഹാ്กคงชซญฐณดตนบปพภมยรลวศษสหอฮะัาิีึเแไ็่้๊์ဂစဇတနပမရလအာို္်ြွ၁၂၇၈ႠႢႣႨႬႵႿაბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰჱჲჳჴჵჶჷჸჹჺ჻ᵻḍḏḤḥḷṃṅṇṛṣṭṯạảấầẩậắễệịọỏỗộớứửữỳỹἀἰὀὁὑ​‐‑–—―‘’“”„†‡•…′″⁄₣₤₩€₱₹⅓⅔→−≡≤①☉☫♀♭♯⚳〈〉〜あいうおかがきぎくぐけこごさしすずぜただちっつとなにのはばひふほまみめもゃゆょらりるれわをんァアィイゥェエォオカガキクグゲコサシジスズセタダチッツテデトドナニネノハバパフブプヘベマミムモャュョラリルレロンヴ・ー一七下世丙中为主乃之乙九二云人今付伊似作侗依信傳儚充光全八六兵其具円再出判利制刷前剛劇劉助動勢包化北十千华南印厂去古可台史同名君吳周命和咲唐善四國園圣在坂型堂堤場塘士夕大天夫奈套女妙姚子孟学學守安宋完宗定宝宫寝寶寺小少尾山岳川州巳市師平广庆府座廬建开式張彌彩影彼征律後御微德心必忠思愛憑憶應懷成战戦所扈技拉拱拳挑揺攻放政散文斯方日旦旭昌明星春晋景智曦書月望朝未本李村杜束来東板林果桜梶棘椎楊楚榮樸橘機正殻殿毅母民水汉沂沙河法泗波泣洪浮淹清湯漢澄澤火灯灵灼無焼熱牌物狐狸玄玉王玩珂珙球理琦琪瓊生甫田甲畢番畫疆病瘡白皇皮真砲礮祈神祠秋秘稽空立竹箋籠精紀約統絵緬織繹義翠者耕聖肖背胡膀臂致興舍艦良芥花芳芽若英萬著藕藥蘄蘇蘿處蝴蝶行術衛表裁裝要規覺观解言記詔詩誓誡誰謎譌譚譜變许谭豪豫費贈贵赤趙足跡軒転辛辨迪逆遇運過道遠選邦邱邵部郭都酈里野金鉄銃鋼錄錡錦鍵鐵钱铁關防阿陈陳陽隊階集雞雪雲霖霹靂韓頒願類顯颜饾駢驗马體高魯齋龍대독라립병보부알연제ﷲﻋ／３～�
+# vocab size: 1,153
+# train has 12,016,989 tokens
+# val has 1,335,222 tokens
